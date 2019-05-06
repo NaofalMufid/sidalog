@@ -1,17 +1,17 @@
 <?php
 
 // Menentukan value dari konfigurasi untuk konek ke server/database
-$host = "puasa1.database.windows.net";
-$user = "izrail";
-$pass = "cabutnyaw4;";
-$dbnm = "sidologdb";
+$host = "ndopokserver.database.windows.net";
+$user = "biyunge";
+$pass = "bapake2019-";
+$dbnm = "gojeh";
 
 // variabel yg akan menjadi instance dari obje PDO
 $kon = null;
 
 try
 {
-    $kon = new PDO("sqlsrv:server=$host;Database=$dbnm","$user","$pass");
+    $kon = new PDO("sqlsrv:server=$host;Database=$dbnm",$user,$pass);
 }
 catch(PDOException $err)
 {
