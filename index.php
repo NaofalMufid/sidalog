@@ -1,3 +1,3 @@
 <?php
-header("location:santri/santri.php");
+header("location:daftar.html");
 ?>
