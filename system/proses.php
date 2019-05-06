@@ -21,7 +21,7 @@ function acakId($panjang)
 $id_santri = acakId(5);
 $id = $_POST['id'];
 $nama = $_POST['nama'];
-$sandi = $_POST['sandi'];
+$sandi = password_hash($_POST['sandi'], PASSWORD_DEFAULT);
 $tgl_lahir = $_POST['tgl_lahir'];
 $tmp_lahir = $_POST['tmp_lahir'];
 $jenkel = $_POST['jenkel'];

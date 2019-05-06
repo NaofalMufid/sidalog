@@ -13,20 +13,25 @@
 
             <form class="form-signin" action="system/proses.php?aksi=daftar" method="POST">
                 <h3 class="form-signin-heading">Form Pendaftaran Santri</h3>
+		<p>* : wajib diisi</p>
                 <label for="nama" class="sr-only">Nama</label>
                 <input type="text" name="nama" class="form-control" placeholder="Nama" required="" autofocus="">
+		<small>*</small>
                 <br>
 
                 <label for="sandi" class="sr-only">Password</label>
                 <input type="password" name="sandi" class="form-control" placeholder="Sandi" required="">
+		<small>*</small>
                 <br>
                 
                 <label for="tgl_lahir" class="sr-only">Tanggal Lahir</label>
                 <input type="date" name="tgl_lahir" class="form-control" placeholder="Tanggal Lahir" required="">
+		<small>*</small>
                 <br>
                 
                 <label for="tmp_lahir" class="sr-only">Tempat Lahir</label>
                 <input type="text" name="tmp_lahir" class="form-control" placeholder="Tempat Lahir" required="">
+		<small>*</small>
                 <br>
                 
                 <div class="radio-inline">
@@ -40,10 +45,11 @@
                     </label>
                 </div>
                 <br>
+		<small>*</small>
                 
                 <label for="alamat" class="sr-only">Alamat</label>
-                <textarea name="alamat" class="form-control" placeholder="Alamat" required="">
-                </textarea>
+                <textarea name="alamat" class="form-control" placeholder="Alamat" required></textarea>
+		<small>*</small>
                 <br>
 
                 <div class="input-group">
@@ -51,8 +57,9 @@
                     <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i>62</span>
                     <input type="text" name="kontak" class="form-control" placeholder="Kontak" required="">
                 </div>
+		<small>*</small>
                 <br>
-                
+
                 <button class="btn btn-primary btn-block" type="submit">Daftar</button>
                 <a href="login.html" class="btn btn-success btn-block">Masuk</a>
             </form>
