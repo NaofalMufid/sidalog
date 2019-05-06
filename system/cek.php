@@ -11,10 +11,10 @@ $ada = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if($stmt->rowCount() == 1){
 	if(password_verify($sandi, $ada['sandi'])){
-		session_start();
-		$_SESSION['id'] = $ada['id_santri'];
-		$_SESSION['uname'] = $ada['nama'];
-		header("location:../santri/santri.php  ");
+session_start();
+$_SESSION['id'] = $ada['id_santri'];
+$_SESSION['uname'] = $ada['nama'];
+header("location:../santri/santri.php  ");
 	}else{
 		header("location:../login.html");
 	}
