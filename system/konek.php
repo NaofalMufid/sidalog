@@ -1,10 +1,10 @@
 <?php
 
 // Menentukan value dari konfigurasi untuk konek ke server/database
-$host = "localhost";
-$user = "root";
-$pass = "pikul";
-$dbnm = "ponpes";
+$host = "puasa1.database.windows.net";
+$user = "izrail";
+$pass = "cabutnyaw4;";
+$dbnm = "sidologdb";
 
 // variabel yg akan menjadi instance dari obje PDO
 $kon = null;
