@@ -1,19 +1,6 @@
 <?php
-session_start();
 include_once("../system/konek.php");
-
-// cek apakah user yang login yang punya hak
-if(empty($_SESSION['uname']))
-{
-    header("location:login.html");
-}
-
-// cek apakah idSantri sama dengan ID di sessionnya
-if($_GET['id'] == $_SESSION['id'])
-{
     $id = $_GET['id'];
-}
-
     $stmt = $kon->prepare("SELECT * FROM santri WHERE id_santri=?");
     $stmt->bindParam(1,$id,PDO::PARAM_STR);
     $stmt->execute();

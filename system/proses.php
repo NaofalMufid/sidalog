@@ -46,7 +46,7 @@ if($aksi == "daftar")
     //$error = $stmt->errorInfo();
     //var_dump($error);
     //var_dump($stmt);
-    header("location:../login.html  ");
+    header("location:../santri/santri.php");
 
 // jika edit berarti merubah data ke database
 }
@@ -69,16 +69,7 @@ elseif($aksi == "update")
     $stmt->bindParam(7,$kontak,PDO::PARAM_STR);
     $stmt->bindParam(8,$id,PDO::PARAM_STR);
     $stmt->execute();
-    //$error = $stmt->errorInfo();
-    //var_dump($error);
-    //var_dump($stmt);
     header("location:../santri/santri.php  ");
-}
-elseif($aksi == "keluar") // mengecek jika ada paramter aksi yang berniali keluar
-{   
-    session_start(); 
-    session_destroy(); // menghapus session yang ada
-    header("location:../login.html  "); // redirect ke halaman login lagi
 }
 
 
