@@ -11,7 +11,7 @@ $kon = null;
 
 try
 {
-    $kon = new PDO("sqlsrv:server=$host;dbname=$dbnm","$user","$pass");
+    $kon = new PDO("sqlsrv:server=$host;Database=$dbnm","$user","$pass");
 }
 catch(PDOException $err)
 {
